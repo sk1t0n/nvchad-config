@@ -1,9 +1,46 @@
-**This repo is supposed to used as config by NvChad users!**
+# nvchad_config
 
-- The main nvchad repo (NvChad/NvChad) is used as a plugin by this repo.
-- So you just import its modules , like `require "nvchad.options" , require "nvchad.mappings"`
-- So you can delete the .git from this repo ( when you clone it locally ) or fork it :)
+This is user configuration for [NvChad](https://github.com/NvChad/starter).
 
-# Credits
+## ⚡ Requirements
 
-1) Lazyvim starter https://github.com/LazyVim/starter as nvchad's starter was inspired by Lazyvim's . It made a lot of things easier!
+- [Nerd Fonts](https://www.nerdfonts.com/font-downloads)
+- [Neovim](https://github.com/neovim/neovim/blob/master/INSTALL.md)
+
+## 🛠️ Installation
+
+### Linux/Mac OS (Unix)
+
+**Make a backup of your current nvim and shared folder**.
+
+```sh
+mv ~/.config/nvim ~/.config/nvim.bak
+mv ~/.local/share/nvim ~/.local/share/nvim.bak
+mv ~/.local/state/nvim ~/.local/state/nvim.bak
+mv ~/.cache/nvim ~/.cache/nvim.bak
+```
+
+**Clone the repository**.
+
+```sh
+git clone --depth=1 https://github.com/sk1t0n/nvchad_config ~/.config/nvim
+rm -rf ~/.config/nvim/.git
+nvim
+```
+
+### Windows (Powershell)
+
+**Make a backup of your current nvim and nvim-data folder**.
+
+```pwsh
+Rename-Item -Path $env:LOCALAPPDATA\nvim -NewName $env:LOCALAPPDATA\nvim.bak
+Rename-Item -Path $env:LOCALAPPDATA\nvim-data -NewName $env:LOCALAPPDATA\nvim-data.bak
+```
+
+**Clone the repository**.
+
+```pwsh
+git clone --depth=1 https://github.com/sk1t0n/nvchad_config $env:LOCALAPPDATA\nvim
+Remove-Item $env:LOCALAPPDATA\nvim\.git -Recurse -Force
+nvim
+```
