@@ -1,18 +1,4 @@
-local M = {}
-
-M.mason = {
-  ensure_installed = {
-    "lua-language-server",
-    "html-lsp",
-    "css-lsp",
-    "typescript-language-server",
-    "eslint_d",
-    "prettier",
-    "node-debug2-adapter",
-  },
-}
-
-M.treesitter = {
+return {
   ensure_installed = {
     "vim",
     "lua",
@@ -51,21 +37,3 @@ M.treesitter = {
     enable = true,
   },
 }
-
--- git support in nvimtree
-M.nvimtree = {
-  git = {
-    enable = true,
-  },
-
-  renderer = {
-    highlight_git = true,
-    icons = {
-      show = {
-        git = true,
-      },
-    },
-  },
-}
-
-return M

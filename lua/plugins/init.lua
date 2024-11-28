@@ -1,17 +1,32 @@
-local overrides = require "configs.overrides"
-
 return {
   {
-    "stevearc/conform.nvim",
-    event = "BufWritePre", -- uncomment for format on save
-    opts = require "configs.conform",
+    "williamboman/mason.nvim",
+    opts = {},
+  },
+  {
+    "williamboman/mason-lspconfig.nvim",
+    opts = {},
+  },
+  {
+    "neovim/nvim-lspconfig",
+    config = function()
+      require "configs.lspconfig"
+    end,
   },
   {
     "mfussenegger/nvim-lint",
-    event = "VeryLazy",
     config = function()
       require "configs.lint"
     end,
+  },
+  {
+    "stevearc/conform.nvim",
+    event = "BufWritePre",
+    opts = require "configs.conform",
+  },
+  {
+    "nvim-treesitter/nvim-treesitter",
+    opts = require "configs.treesitter",
   },
   {
     "stevearc/dressing.nvim",
@@ -20,9 +35,7 @@ return {
   {
     "windwp/nvim-ts-autotag",
     event = { "BufReadPre", "BufNewFile" },
-    config = function()
-      require("nvim-ts-autotag").setup()
-    end,
+    opts = {},
   },
   {
     "max397574/better-escape.nvim",
@@ -125,26 +138,6 @@ return {
     },
     config = function()
       require("codeium").setup()
-    end,
-  },
-
-  -- override plugin configs
-  {
-    "williamboman/mason.nvim",
-    opts = overrides.mason,
-  },
-  {
-    "nvim-treesitter/nvim-treesitter",
-    opts = overrides.treesitter,
-  },
-  {
-    "nvim-tree/nvim-tree.lua",
-    opts = overrides.nvimtree,
-  },
-  {
-    "neovim/nvim-lspconfig",
-    config = function()
-      require "configs.lspconfig"
     end,
   },
 }

@@ -3,14 +3,11 @@ require("nvchad.configs.lspconfig").defaults()
 
 local lspconfig = require "lspconfig"
 
--- EXAMPLE
-local servers = { "html", "cssls", "ts_ls" }
+local servers = { "html", "cssls", "ts_ls", "intelephense" }
 local nvlsp = require "nvchad.configs.lspconfig"
 
 -- lsps with default config
-local function organize_imports()
-  
-end
+local function organize_imports() end
 
 for _, lsp in ipairs(servers) do
   lspconfig[lsp].setup {
@@ -21,7 +18,7 @@ for _, lsp in ipairs(servers) do
       OrganizeImports = {
         organize_imports,
         description = "Organize Imports",
-      }
-    }
+      },
+    },
   }
 end
