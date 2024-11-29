@@ -1,12 +1,6 @@
 return {
-  {
-    "williamboman/mason.nvim",
-    opts = {},
-  },
-  {
-    "williamboman/mason-lspconfig.nvim",
-    opts = {},
-  },
+  { "williamboman/mason.nvim" },
+  { "williamboman/mason-lspconfig.nvim" },
   {
     "neovim/nvim-lspconfig",
     config = function()
@@ -28,22 +22,12 @@ return {
     "nvim-treesitter/nvim-treesitter",
     opts = require "configs.treesitter",
   },
-  {
-    "stevearc/dressing.nvim",
-    opts = {},
-  },
+  { "stevearc/dressing.nvim" },
   {
     "windwp/nvim-ts-autotag",
     event = { "BufReadPre", "BufNewFile" },
-    opts = {},
   },
-  {
-    "max397574/better-escape.nvim",
-    event = "InsertEnter",
-    config = function()
-      require("better_escape").setup()
-    end,
-  },
+  { "max397574/better-escape.nvim" },
   {
     "nvim-neotest/neotest",
     dependencies = {
@@ -56,26 +40,7 @@ return {
   {
     "mfussenegger/nvim-dap",
     config = function()
-      local ok, dap = pcall(require, "dap")
-      if not ok then
-        return
-      end
-      dap.configurations.typescript = {
-        {
-          type = "node2",
-          name = "node attach",
-          request = "attach",
-          program = "${file}",
-          cwd = vim.fn.getcwd(),
-          sourceMaps = true,
-          protocol = "inspector",
-        },
-      }
-      dap.adapters.node2 = {
-        type = "executable",
-        command = "node-debug2-adapter",
-        args = {},
-      }
+      require "configs.dap"
     end,
     dependencies = {
       "mxsdev/nvim-dap-vscode-js",
@@ -118,26 +83,10 @@ return {
       require("leap").add_default_mappings(true)
     end,
   },
-  {
-    "kevinhwang91/nvim-bqf",
-  },
-  {
-    "folke/trouble.nvim",
-    opts = {},
-  },
+  { "kevinhwang91/nvim-bqf" },
+  { "folke/trouble.nvim" },
   {
     "folke/todo-comments.nvim",
     dependencies = { "nvim-lua/plenary.nvim" },
-    opts = {},
-  },
-  {
-    "Exafunction/codeium.nvim",
-    dependencies = {
-      "nvim-lua/plenary.nvim",
-      "hrsh7th/nvim-cmp",
-    },
-    config = function()
-      require("codeium").setup()
-    end,
   },
 }

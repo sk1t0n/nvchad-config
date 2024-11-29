@@ -1,14 +1,7 @@
 require "nvchad.mappings"
 
--- add yours here
-
 local set = vim.keymap.set
 local del = vim.keymap.del
-
-set("i", "jj", "<ESC>")
-set("i", "<C-g>", function()
-  return vim.fn["codeium#Accept"]()
-end, { expr = true })
 
 set("n", "<leader>n", "<cmd>enew<CR>", { desc = "buffer new" })
 del("n", "<leader>b")
@@ -27,10 +20,19 @@ set("n", "<leader>bC", function()
   require("nvchad.tabufline").closeAllBufs()
 end, { desc = "close all buffers" })
 
--- set("n", "<leader>du", function require("dapui").toggle() end, { desc = "toggle debug ui" })
--- set("n", "<leader>db", function require("dap").toggle_breakpoint() end, { desc = "toggle debug breakpoint" })
--- set("n", "<leader>ds", function require("dap").continue() end, { desc = "start debug" })
--- set("n", "<leader>dn", function require("dap").step_over() end, { desc = "debug step over" })
+set("n", "<leader>du", function()
+  require("dapui").toggle()
+end, { desc = "toggle debug ui" })
+set("n", "<leader>db", function()
+  require("dap").toggle_breakpoint()
+end, { desc = "toggle debug breakpoint" })
+set("n", "<leader>ds", function()
+  require("dap").continue()
+end, { desc = "start/stop debug" })
+set("n", "<leader>dn", function()
+  require("dap").step_over()
+end, { desc = "debug step over" })
+
 -- set("n", "<leader>g", { desc = "lazygit" })
 -- set("n", "<leader>l", { desc = "LSP" })
 
