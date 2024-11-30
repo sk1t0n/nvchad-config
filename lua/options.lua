@@ -1,5 +1,4 @@
 require "nvchad.options"
-require "setup"
 
 local o = vim.o
 

@@ -1,5 +1,6 @@
-require("dressing").setup {}
-
-require("nvim-ts-autotag").setup {}
-
-require("better_escape").setup {}
+require("dressing").setup(require "configs.dressing_config")
+require("gitsigns").setup(require "configs.gitsigns_config")
+require("mason-lspconfig").setup()
+require("nvim-ts-autotag").setup()
+require("better_escape").setup()
+require("ibl").setup()
