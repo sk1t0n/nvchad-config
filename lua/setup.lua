@@ -4,3 +4,12 @@ require("mason-lspconfig").setup()
 require("nvim-ts-autotag").setup()
 require("better_escape").setup()
 require("ibl").setup()
+require("lspconfig").lua_ls.setup {
+  settings = {
+    Lua = {
+      diagnostics = {
+        globals = { "vim" },
+      },
+    },
+  },
+}

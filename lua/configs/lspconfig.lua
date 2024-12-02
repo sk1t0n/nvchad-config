@@ -1,8 +1,6 @@
 -- load defaults i.e lua_lsp
 require("nvchad.configs.lspconfig").defaults()
 
-local lspconfig = require "lspconfig"
-
 local servers = {
   "html",
   "emmet_ls",
@@ -21,6 +19,8 @@ local servers = {
   "docker_compose_language_service",
   "yamlls",
 }
+
+local lspconfig = require "lspconfig"
 local nvlsp = require "nvchad.configs.lspconfig"
 
 for _, lsp in ipairs(servers) do
