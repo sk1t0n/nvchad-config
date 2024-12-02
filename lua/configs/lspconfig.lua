@@ -3,7 +3,24 @@ require("nvchad.configs.lspconfig").defaults()
 
 local lspconfig = require "lspconfig"
 
-local servers = { "html", "cssls", "ts_ls", "intelephense" }
+local servers = {
+  "html",
+  "emmet_ls",
+  "cssls",
+  "css_variables",
+  "cssmodules_ls",
+  "tailwindcss",
+  "jsonls",
+  "biome",
+  "ts_ls",
+  "intelephense",
+  "lua_ls",
+  "sqls",
+  "marksman",
+  "dockerls",
+  "docker_compose_language_service",
+  "yamlls",
+}
 local nvlsp = require "nvchad.configs.lspconfig"
 
 for _, lsp in ipairs(servers) do
