@@ -65,6 +65,11 @@ return {
     },
   },
   {
+    "microsoft/vscode-js-debug",
+    opt = true,
+    run = "npm install --legacy-peer-deps && npx gulp vsDebugServerBundle && mv dist out",
+  },
+  {
     "rcarriga/nvim-dap-ui",
     config = function()
       require("dapui").setup()
