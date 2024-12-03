@@ -1,13 +1,15 @@
-require("lint").linters_by_ft = {
+local lint = require "lint"
+
+lint.linters_by_ft = {
   javascript = { "biomejs" },
   typescript = { "biomejs" },
-  typescriptreact = { "biomejs" },
   javascriptreact = { "biomejs" },
+  typescriptreact = { "biomejs" },
   php = { "phpstan" },
 }
 
-vim.api.nvim_create_autocmd({ "BufWritePost" }, {
+vim.api.nvim_create_autocmd({ "BufEnter", "BufWritePost", "InsertLeave" }, {
   callback = function()
-    require("lint").try_lint()
+    lint.try_lint()
   end,
 })
