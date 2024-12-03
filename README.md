@@ -4,7 +4,7 @@ This is user configuration for [NvChad](https://github.com/NvChad/starter).
 
 ## ⚡ Requirements
 
-- [Nerd Fonts](https://www.nerdfonts.com/font-downloads) - for support icons in fonts
+- [Nerd Fonts](https://www.nerdfonts.com/font-downloads) - for to support icons in fonts
 - [Neovim](https://github.com/neovim/neovim/blob/master/INSTALL.md)
 
 ## 🛠️ Installation
