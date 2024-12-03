@@ -4,7 +4,7 @@ This is user configuration for [NvChad](https://github.com/NvChad/starter).
 
 ## ⚡ Requirements
 
-- [Nerd Fonts](https://www.nerdfonts.com/font-downloads)
+- [Nerd Fonts](https://www.nerdfonts.com/font-downloads) - for support icons in fonts
 - [Neovim](https://github.com/neovim/neovim/blob/master/INSTALL.md)
 
 ## 🛠️ Installation
@@ -25,8 +25,16 @@ mv ~/.cache/nvim ~/.cache/nvim.bak
 ```sh
 git clone --depth=1 https://github.com/sk1t0n/nvchad_config ~/.config/nvim
 rm -rf ~/.config/nvim/.git
+```
+
+**Install Mason packages**.
+
+```sh
 nvim
 ```
+
+- `:MasonInstallAll` - install all required packages (LSP, Linters, Formatters)
+- `:MasonInstall js-debug-adapter`, `:MasonInstall php-debug-adapter` - install debug adapters for JS/TS and PHP
 
 ### Windows (Powershell)
 
@@ -42,5 +50,79 @@ Rename-Item -Path $env:LOCALAPPDATA\nvim-data -NewName $env:LOCALAPPDATA\nvim-da
 ```pwsh
 git clone --depth=1 https://github.com/sk1t0n/nvchad_config $env:LOCALAPPDATA\nvim
 Remove-Item $env:LOCALAPPDATA\nvim\.git -Recurse -Force
+```
+
+**Install Mason packages**.
+
+```sh
 nvim
 ```
+
+- `:MasonInstallAll` - install all required packages (LSP, Linters, Formatters)
+- `:MasonInstall js-debug-adapter`, `:MasonInstall php-debug-adapter` - install debug adapters for JS/TS and PHP
+
+## Mappings
+
+| mode | key                     | description                                     |
+| ---- | ----------------------- | ----------------------------------------------- |
+| n, v | \<Space>h               | mappings                                        |
+| n, v | \<Space>/               | toggle comment                                  |
+| n    | \<Ctrl> + \\            | format file if automatic formatting is disabled |
+| i    | jj                      | \<Esc>                                          |
+| i    | \<Ctrl> + b             | move beginning of line                          |
+| i    | \<Ctrl> + e             | move end of line                                |
+| i    | \<Ctrl> + h or \<Left>  | move left                                       |
+| i    | \<Ctrl> + l or \<Right> | move right                                      |
+| i    | \<Ctrl> + j or \<Down>  | move down                                       |
+| i    | \<Ctrl> + k or \<Up>    | move up                                         |
+| n    | \\                      | add vertical window                             |
+| n    | \|                      | add horizontal window                           |
+| n    | \<Ctrl> + h             | switch window left                              |
+| n    | \<Ctrl> + l             | switch window right                             |
+| n    | \<Ctrl> + j             | switch window down                              |
+| n    | \<Ctrl> + k             | switch window up                                |
+| n    | \<Space>n               | buffer new                                      |
+| n    | \<Ctrl> + s             | save file                                       |
+| n    | \<Ctrl> + c             | copy whole file                                 |
+| n    | \<Tab>                  | buffer goto next                                |
+| n    | \<Shift> + \<Tab>       | buffer goto previous                            |
+| n    | \<Space>x               | buffer close                                    |
+| n    | \<Space>bc              | close all buffers except current                |
+| n    | \<Space>bC              | close all buffers                               |
+| n, t | \<Alt> + v              | toggle vertical terminal                        |
+| n, t | \<Alt> + h              | toggle horizontal terminal                      |
+| n, t | \<Alt> + i              | toggle floating terminal                        |
+| t    | \<Ctrl> + x             | escape terminal mode                            |
+| n    | \<Space>q               | quit window                                     |
+| n    | \<Space>Q               | exit Neovim                                     |
+| n    | \<Space>p               | Mason                                           |
+| n    | \<Space>e               | NvimTree focus window                           |
+| n    | \<Ctrl> + n             | NvimTree toggle window                          |
+| n    | \<Space>ff              | Telescope find files                            |
+| n    | \<Space>fa              | Telescope find all files                        |
+| n    | \<Space>fw              | Telescope find files by word                    |
+| n    | \<Space>fb              | Telescope find buffers                          |
+| n    | \<Space>fh              | Telescope help page                             |
+| n    | \<Space>fm              | Telescope find marks                            |
+| n    | \<Space>fo              | Telescope find old files                        |
+| n    | \<Space>fz              | Telescope find in current buffer                |
+| n    | \<Space>fc              | Telescope git commits                           |
+| n    | \<Space>fs              | Telescope git status                            |
+| n    | \<Space>ft              | Telescope NvChad themes                         |
+| n    | \<Space>du              | toggle debug ui                                 |
+| n    | \<Space>db              | toggle debug breakpoint                         |
+| n    | \<Space>ds              | start/stop debug                                |
+| n    | \<Space>dn              | debug step over                                 |
+| n    | gD                      | go to declaration                               |
+| n    | gd                      | go to definition                                |
+| n    | gi                      | go to implementation                            |
+| n, v | \<Space>la              | LSP code action                                 |
+| n    | \<Space>ld              | LSP diagnostic                                  |
+| n    | \<Space>lr              | LSP references                                  |
+| n    | \<Space>gd              | Git diff                                        |
+| n    | \<Space>gl              | Git log                                         |
+| n    | \<Space>gs              | Git status                                      |
+| n    | ]t                      | next todo comment                               |
+| n    | [t                      | previous todo comment                           |
+| n    | \<Space>wK              | WhichKey all keymaps                            |
+| n    | \<Space>wk              | WhichKey query lookup                           |
