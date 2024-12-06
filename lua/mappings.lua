@@ -27,6 +27,10 @@ set("n", "<leader>ft", function()
 end, { desc = "telescope nvchad themes" })
 set({ "n", "v" }, "<leader>h", "<cmd>NvCheatsheet<CR>", { desc = "mappings" })
 del("n", "<leader>v")
+set("n", "<leader>c", function()
+  require("nvchad.tabufline").close_buffer()
+end, { desc = "buffer close" })
+del("n", "<leader>x")
 
 -- close buffers
 set("n", "<leader>bc", function()
