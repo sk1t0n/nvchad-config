@@ -129,7 +129,11 @@ nvim
 | n    | \<Space>gd              | Git diff                                        |
 | n    | \<Space>gl              | Git log                                         |
 | n    | \<Space>gs              | Git status                                      |
-| n    | ]t                      | next todo comment                               |
+| n    | [d                      | previous diagnostic                             |
+| n    | ]d                      | next diagnostic                                 |
 | n    | [t                      | previous todo comment                           |
+| n    | ]t                      | next todo comment                               |
+| n    | s                       | Leap forward to                                 |
+| n    | S                       | Leap backward to                                |
 | n    | \<Space>wK              | WhichKey all keymaps                            |
 | n    | \<Space>wk              | WhichKey query lookup                           |
