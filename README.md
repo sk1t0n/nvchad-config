@@ -86,7 +86,7 @@ nvim
 | n    | \<Ctrl> + c             | copy whole file                                 |
 | n    | \<Tab>                  | buffer goto next                                |
 | n    | \<Shift> + \<Tab>       | buffer goto previous                            |
-| n    | \<Space>x               | buffer close                                    |
+| n    | \<Space>c               | buffer close                                    |
 | n    | \<Space>bc              | close all buffers except current                |
 | n    | \<Space>bC              | close all buffers                               |
 | n, t | \<Alt> + v              | toggle vertical terminal                        |
