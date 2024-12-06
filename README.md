@@ -135,5 +135,7 @@ nvim
 | n    | ]t                      | next todo comment                               |
 | n    | s                       | Leap forward to                                 |
 | n    | S                       | Leap backward to                                |
+| n    | \<Ctrl> + b             | CMP scroll screen back                          |
+| n    | \<Ctrl> + f             | CMP scroll screen forward                       |
 | n    | \<Space>wK              | WhichKey all keymaps                            |
 | n    | \<Space>wk              | WhichKey query lookup                           |
