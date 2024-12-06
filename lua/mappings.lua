@@ -48,6 +48,12 @@ set("n", "<leader>Q", "<cmd>confirm qall<CR>", { desc = "exit nvim" })
 set("n", "\\", "<cmd>vsplit<CR>", { desc = "vertical split" })
 set("n", "|", "<cmd>split<CR>", { desc = "horizontal split" })
 
+-- resize windows
+set("n", "<C-Up>", "<Cmd>resize -2<CR>", { desc = "decrease window height" })
+set("n", "<C-Down>", "<Cmd>resize +2<CR>", { desc = "increase window height" })
+set("n", "<C-Left>", "<Cmd>vertical resize -2<CR>", { desc = "decrease window width" })
+set("n", "<C-Right>", "<Cmd>vertical resize +2<CR>", { desc = "increase window width" })
+
 -- Mason
 set("n", "<leader>p", "<cmd>Mason<CR>", { desc = "mason" })
 
