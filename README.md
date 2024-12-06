@@ -116,6 +116,9 @@ nvim
 | n    | gD                      | go to declaration                               |
 | n    | gd                      | go to definition                                |
 | n    | gi                      | go to implementation                            |
+| n    | \<Space>xd              | Trouble toggle diagnostics                      |
+| n    | \<Space>xs              | Trouble toggle symbols                          |
+| n    | \<Space>xl              | Trouble toggle LSP definitions, references      |
 | n, v | \<Space>la              | LSP code action                                 |
 | n    | \<Space>ld              | LSP diagnostic                                  |
 | n    | \<Space>lr              | LSP references                                  |
