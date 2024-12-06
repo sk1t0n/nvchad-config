@@ -77,6 +77,10 @@ nvim
 | i    | \<Ctrl> + k or \<Up>    | move up                                         |
 | n    | \\                      | add vertical window                             |
 | n    | \|                      | add horizontal window                           |
+| n    | \<Ctrl> + \<Up>         | decrease window height                          |
+| n    | \<Ctrl> + \<Down>       | increase window height                          |
+| n    | \<Ctrl> + \<Left>       | decrease window width                           |
+| n    | \<Ctrl> + \<Right>      | increase window width                           |
 | n    | \<Ctrl> + h             | switch window left                              |
 | n    | \<Ctrl> + l             | switch window right                             |
 | n    | \<Ctrl> + j             | switch window down                              |
