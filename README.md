@@ -1,6 +1,16 @@
 # nvchad_config
 
-This is user configuration for [NvChad](https://github.com/NvChad/starter).
+This is a user configuration for Neovim based on [NvChad](https://github.com/NvChad/starter). Plugins for PHP, JavaScript, Typescript, Lua, HTML, CSS, JSON, YAML, Docker are installed and configured.
+
+- The plugins are configured:
+  - [nvim-cmp](https://github.com/hrsh7th/nvim-cmp) (code completion),
+  - [nvim-treesitter](https://github.com/nvim-treesitter/nvim-treesitter) (syntax highlighting),
+  - [nvim-lspconfig](https://github.com/neovim/nvim-lspconfig) (LSP servers: PHP, JS, TS, [Emmet](https://emmet.io), [Tailwind CSS](https://tailwindcss.com), [Docker](https://www.docker.com) and others),
+  - [conform.nvim](https://github.com/stevearc/conform.nvim) (automatic formatting of code),
+  - [nvim-dap](https://github.com/mfussenegger/nvim-dap) (debugging),
+  - [nvim-lint](https://github.com/mfussenegger/nvim-lint) (code check for compliance with standards),
+  - others (git, todo comments, etc)
+- [Override mappings](#mappings).
 
 ## ⚡ Requirements
 
