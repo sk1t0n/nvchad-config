@@ -13,3 +13,4 @@ require("lspconfig").lua_ls.setup {
     },
   },
 }
+require("configs.neo_tree").setup()

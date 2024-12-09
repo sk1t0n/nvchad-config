@@ -4,6 +4,8 @@ local set = vim.keymap.set
 local del = vim.keymap.del
 
 -- override NvChad
+set("n", "<leader>e", "<cmd>Neotree toggle<CR>", { desc = "toggle Neotree" })
+del("n", "<C-n>")
 del("n", "<leader>b")
 set("n", "<leader>n", "<cmd>enew<CR>", { desc = "buffer new" })
 del("n", "<leader>rn")
