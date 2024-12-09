@@ -110,8 +110,7 @@ nvim
 | n    | \<Space>q               | quit window                                     |
 | n    | \<Space>Q               | exit Neovim                                     |
 | n    | \<Space>p               | Mason                                           |
-| n    | \<Space>e               | NvimTree focus window                           |
-| n    | \<Ctrl> + n             | NvimTree toggle window                          |
+| n    | \<Space>e               | toggle Neotree (? - Neotree Help)               |
 | n    | \<Space>ff              | Telescope find files                            |
 | n    | \<Space>fa              | Telescope find all files                        |
 | n    | \<Space>fw              | Telescope find files by word                    |
