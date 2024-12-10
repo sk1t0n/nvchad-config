@@ -126,7 +126,10 @@ nvim
 | n    | \<Space>du              | toggle debug ui                                 |
 | n    | \<Space>db              | toggle debug breakpoint                         |
 | n    | \<Space>ds              | start/stop debug                                |
-| n    | \<Space>dn              | debug step over                                 |
+| n    | \<Space>dd              | disconnect debug                                |
+| n    | \<Space>do              | debug step over                                 |
+| n    | \<Space>di              | debug step into                                 |
+| n    | \<Space>dp              | debug step out                                  |
 | n    | gD                      | go to declaration                               |
 | n    | gd                      | go to definition                                |
 | n    | gi                      | go to implementation                            |
