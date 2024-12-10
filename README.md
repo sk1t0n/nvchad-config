@@ -11,6 +11,7 @@ This is a user configuration for Neovim based on [NvChad](https://github.com/NvC
   - [nvim-lint](https://github.com/mfussenegger/nvim-lint) (code check for compliance with standards),
   - others (git, todo comments, etc)
 - [Override mappings](#mappings).
+- Change [nvim-tree.lua](https://github.com/nvim-tree/nvim-tree.lua) to [neo-tree.nvim](https://github.com/nvim-neo-tree/neo-tree.nvim).
 
 ## ⚡ Requirements
 
