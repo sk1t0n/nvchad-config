@@ -16,6 +16,29 @@ This is a user configuration for Neovim based on [NvChad](https://github.com/NvC
 ## ⚡ Requirements
 
 - [Nerd Fonts](https://www.nerdfonts.com/font-downloads) - for to support icons in fonts
+
+  Example configuration file for [Alacritty](https://alacritty.org/index.html)
+
+  ```toml
+  # https://github.com/alacritty/alacritty/tree/master#configuration
+
+  [window]
+
+  padding.x = 20
+  padding.y = 20
+
+  opacity = 0.92
+  blur = true
+
+  decorations = "Full"
+  decorations_theme_variant = "Dark" # "Light"
+
+  [font]
+
+  size = 15.0
+  normal.family = "JetBrainsMono Nerd Font"
+  ```
+
 - [Neovim](https://github.com/neovim/neovim/blob/master/INSTALL.md)
 
 ## 🛠️ Installation
