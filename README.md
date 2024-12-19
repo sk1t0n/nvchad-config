@@ -1,6 +1,6 @@
 # nvchad_config
 
-This is a user configuration for Neovim based on [NvChad](https://github.com/NvChad/starter). Plugins for PHP, JavaScript, Typescript, Lua, HTML, CSS, JSON, YAML, Docker are installed and configured.
+This is a user configuration for Neovim based on [NvChad](https://github.com/NvChad/starter). Plugins for PHP, JavaScript, Typescript, Lua, HTML, CSS, JSON, YAML, Docker are configured.
 
 - The plugins are configured:
   - [nvim-cmp](https://github.com/hrsh7th/nvim-cmp) (code completion),
