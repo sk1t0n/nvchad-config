@@ -12,6 +12,7 @@ local servers = {
   "biome",
   "ts_ls",
   "intelephense",
+  "gopls",
   "lua_ls",
   "sqls",
   "marksman",
