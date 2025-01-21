@@ -88,6 +88,7 @@ set("n", "gd", vim.lsp.buf.definition, { desc = "go to definition" })
 set("n", "gi", vim.lsp.buf.implementation, { desc = "go to implementation" })
 set("n", "<leader>lr", vim.lsp.buf.references, { desc = "LSP references" })
 set("n", "<leader>lR", vim.lsp.buf.rename, { desc = "LSP rename in buffer" })
+set("n", "<leader>ls", vim.lsp.buf.signature_help, { desc = "LSP signature help" })
 set({ "n", "v" }, "<leader>la", vim.lsp.buf.code_action, { desc = "LSP code action" })
 
 --  Git

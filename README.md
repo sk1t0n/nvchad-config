@@ -163,6 +163,7 @@ nvim
 | n    | \<Space>ld              | LSP diagnostic                                  |
 | n    | \<Space>lr              | LSP references                                  |
 | n    | \<Space>lR              | LSP rename in buffer                            |
+| n    | \<Space>ls              | LSP signature help                              |
 | n    | \<Space>gd              | Git diff                                        |
 | n    | \<Space>gl              | Git log                                         |
 | n    | \<Space>gs              | Git status                                      |
