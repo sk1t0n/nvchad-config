@@ -10,7 +10,14 @@ if not ok then
 end
 
 dap.configurations = {
-  php = {},
+  php = {
+    {
+      name = "Listen for Xdebug",
+      type = "php",
+      request = "launch",
+      port = 9003,
+    },
+  },
 }
 
 dap.adapters = {
