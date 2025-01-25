@@ -24,8 +24,8 @@ This is a user configuration for Neovim based on [NvChad](https://github.com/NvC
 
   [window]
 
-  padding.x = 20
-  padding.y = 20
+  padding.x = 5
+  padding.y = 5
 
   opacity = 0.92
   blur = true
