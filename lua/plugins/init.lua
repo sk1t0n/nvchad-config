@@ -153,4 +153,5 @@ return {
       "hrsh7th/nvim-cmp",
     },
   },
+  { "simrat39/inlay-hints.nvim" },
 }

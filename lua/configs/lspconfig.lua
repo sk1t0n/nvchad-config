@@ -31,3 +31,23 @@ for _, lsp in ipairs(servers) do
     capabilities = nvlsp.capabilities,
   }
 end
+
+local ih = require "inlay-hints"
+lspconfig.gopls.setup {
+  on_attach = function(c, b)
+    ih.on_attach(c, b)
+  end,
+  settings = {
+    gopls = {
+      hints = {
+        assignVariableTypes = true,
+        compositeLiteralFields = true,
+        compositeLiteralTypes = true,
+        constantValues = true,
+        functionTypeParameters = true,
+        parameterNames = true,
+        rangeVariableTypes = true,
+      },
+    },
+  },
+}

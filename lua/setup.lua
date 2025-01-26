@@ -29,5 +29,6 @@ require("actions-preview").setup {
     },
   },
 }
-require("treesj").setup {}
-require("codeium").setup {}
+require("treesj").setup()
+require("codeium").setup()
+require("inlay-hints").setup()
