@@ -89,7 +89,10 @@ set("n", "gi", vim.lsp.buf.implementation, { desc = "go to implementation" })
 set("n", "<leader>lr", vim.lsp.buf.references, { desc = "LSP references" })
 set("n", "<leader>lR", vim.lsp.buf.rename, { desc = "LSP rename in buffer" })
 set("n", "<leader>ls", vim.lsp.buf.signature_help, { desc = "LSP signature help" })
-set({ "n", "v" }, "<leader>la", vim.lsp.buf.code_action, { desc = "LSP code action" })
+set({ "n", "v" }, "<leader>la", require("actions-preview").code_actions, { desc = "LSP code action" })
+
+-- Splitting/joining blocks of code
+set("n", "bt", "<cmd>TSJToggle<CR>", { desc = "splitting/joining blocks of code" })
 
 --  Git
 set("n", "<leader>gd", "<cmd>Gitsigns diffthis<CR>", { desc = "git diff" })

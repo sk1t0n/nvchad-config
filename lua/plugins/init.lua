@@ -141,4 +141,16 @@ return {
     cmd = "Trouble",
     keys = require("configs.trouble").keys,
   },
+  { "aznhe21/actions-preview.nvim" },
+  {
+    "Wansmer/treesj",
+    dependencies = { "nvim-treesitter/nvim-treesitter" },
+  },
+  {
+    "Exafunction/codeium.nvim",
+    dependencies = {
+      "nvim-lua/plenary.nvim",
+      "hrsh7th/nvim-cmp",
+    },
+  },
 }

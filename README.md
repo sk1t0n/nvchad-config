@@ -9,7 +9,7 @@ This is a user configuration for Neovim based on [NvChad](https://github.com/NvC
   - [conform.nvim](https://github.com/stevearc/conform.nvim) (automatic formatting of code, for JS/TS you need add the configuration file [biome.json](https://github.com/sk1t0n/nvchad_config/blob/master/biome.json) in the root folder, for YAML you need add the configuration file [yamlfmt.yml](https://github.com/sk1t0n/nvchad_config/blob/master/yamlfmt.yml) in the root folder, for PHP you may add the configuration file [.php-cs-fixer.dist.php](https://github.com/sk1t0n/nvchad_config/blob/master/.php-cs-fixer.dist.php) in the root folder),
   - [nvim-dap](https://github.com/mfussenegger/nvim-dap) (debugging for PHP),
   - [nvim-lint](https://github.com/mfussenegger/nvim-lint) (code check for compliance with standards),
-  - others (git, todo comments, etc)
+  - others (Git, [Todo Comments](https://github.com/folke/todo-comments.nvim), [Codeium (AI)](https://github.com/Exafunction/codeium.nvim), etc)
 - [Override mappings](#mappings).
 - Change [nvim-tree.lua](https://github.com/nvim-tree/nvim-tree.lua) to [neo-tree.nvim](https://github.com/nvim-neo-tree/neo-tree.nvim).
 
@@ -164,6 +164,7 @@ nvim
 | n    | \<Space>lr              | LSP references                                  |
 | n    | \<Space>lR              | LSP rename in buffer                            |
 | n    | \<Space>ls              | LSP signature help                              |
+| n    | bt                      | splitting/joining blocks of code                |
 | n    | \<Space>gd              | Git diff                                        |
 | n    | \<Space>gl              | Git log                                         |
 | n    | \<Space>gs              | Git status                                      |
