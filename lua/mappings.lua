@@ -94,6 +94,9 @@ set({ "n", "v" }, "<leader>la", require("actions-preview").code_actions, { desc 
 -- Splitting/joining blocks of code
 set("n", "bt", "<cmd>TSJToggle<CR>", { desc = "splitting/joining blocks of code" })
 
+-- Refactoring
+set({ "n", "v" }, "<leader>rr", require("refactoring").select_refactor, { desc = "select Refactor" })
+
 --  Git
 set("n", "<leader>gd", "<cmd>Gitsigns diffthis<CR>", { desc = "git diff" })
 set("n", "<leader>gl", "<cmd>Flog<CR>", { desc = "git log" })
