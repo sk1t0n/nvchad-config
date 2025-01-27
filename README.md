@@ -5,7 +5,7 @@ This is a user configuration for Neovim based on [NvChad](https://github.com/NvC
 - The plugins are configured:
   - [nvim-cmp](https://github.com/hrsh7th/nvim-cmp) (code completion),
   - [nvim-treesitter](https://github.com/nvim-treesitter/nvim-treesitter) (syntax highlighting),
-  - [nvim-lspconfig](https://github.com/neovim/nvim-lspconfig) (LSP servers: PHP, JS, TS, [Emmet](https://emmet.io), [Tailwind CSS](https://tailwindcss.com), [Docker](https://www.docker.com) and others),
+  - [nvim-lspconfig](https://github.com/neovim/nvim-lspconfig) (LSP servers: PHP, Go, JS, TS, [Emmet](https://emmet.io), [Tailwind CSS](https://tailwindcss.com), [Docker](https://www.docker.com) and others),
   - [conform.nvim](https://github.com/stevearc/conform.nvim) (automatic formatting of code, for JS/TS you need add the configuration file [biome.json](https://github.com/sk1t0n/nvchad_config/blob/master/biome.json) in the root folder, for YAML you need add the configuration file [yamlfmt.yml](https://github.com/sk1t0n/nvchad_config/blob/master/yamlfmt.yml) in the root folder, for PHP you may add the configuration file [.php-cs-fixer.dist.php](https://github.com/sk1t0n/nvchad_config/blob/master/.php-cs-fixer.dist.php) in the root folder),
   - [nvim-dap](https://github.com/mfussenegger/nvim-dap) (debugging for PHP),
   - [nvim-lint](https://github.com/mfussenegger/nvim-lint) (code check for compliance with standards),
