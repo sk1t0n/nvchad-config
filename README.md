@@ -165,7 +165,7 @@ nvim
 | n    | \<Space>lR              | LSP rename in buffer                            |
 | n    | \<Space>ls              | LSP signature help                              |
 | n    | bt                      | splitting/joining blocks of code                |
-| n    | \<Space>rr              | select Refactor                                 |
+| n, v | \<Space>rr              | select Refactor                                 |
 | n    | \<Space>gd              | Git diff                                        |
 | n    | \<Space>gl              | Git log                                         |
 | n    | \<Space>gs              | Git status                                      |
