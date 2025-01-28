@@ -1,6 +1,6 @@
 local options = {
   formatters_by_ft = {
-    php = { "php_cs_fixer" },
+    php = { "pint", "php_cs_fixer", stop_after_first = true },
     go = { "golines" },
     yaml = { "yamlfmt" },
   },
