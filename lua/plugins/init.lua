@@ -93,6 +93,16 @@ return {
     run = "npm install --legacy-peer-deps && npx gulp vsDebugServerBundle && mv dist out",
   },
   {
+    "leoluz/nvim-dap-go",
+    ft = "go",
+    dependencies = { "mfussenegger/nvim-dap" },
+    opts = {
+      delve = {
+        detached = false, -- need for Windows
+      },
+    },
+  },
+  {
     "rcarriga/nvim-dap-ui",
     config = function()
       require("dapui").setup()

@@ -12,10 +12,18 @@ end
 dap.configurations = {
   php = {
     {
-      name = "Listen for Xdebug",
+      name = "Xdebug (PHP)",
       type = "php",
       request = "launch",
       port = 9003,
+    },
+  },
+  go = {
+    {
+      name = "Delve (GoLang)",
+      type = "go",
+      request = "launch",
+      program = "${file}",
     },
   },
 }
@@ -25,5 +33,14 @@ dap.adapters = {
     type = "executable",
     command = "node",
     args = { path_pkg .. "php-debug-adapter/extension/out/phpDebug.js" },
+  },
+  go = {
+    type = "server",
+    host = "127.0.0.1",
+    port = "8086",
+    executable = {
+      command = "dlv",
+      args = { "dap", "-l", "127.0.0.1:8086", "--log" },
+    },
   },
 }
