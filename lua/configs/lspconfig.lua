@@ -32,6 +32,10 @@ for _, lsp in ipairs(servers) do
   }
 end
 
+lspconfig.golangci_lint_ls.setup {
+  filetypes = { "go", "gomod" },
+}
+
 local ih = require "inlay-hints"
 lspconfig.gopls.setup {
   on_attach = function(c, b)

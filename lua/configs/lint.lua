@@ -6,6 +6,7 @@ lint.linters_by_ft = {
   javascriptreact = { "biomejs" },
   typescriptreact = { "biomejs" },
   php = { "phpstan" },
+  go = { "golangcilint" },
 }
 
 vim.api.nvim_create_autocmd({ "BufEnter", "BufWritePost", "InsertLeave" }, {
