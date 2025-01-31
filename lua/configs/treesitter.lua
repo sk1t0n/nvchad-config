@@ -26,6 +26,7 @@ return {
     "gomod",
     "gosum",
     "gotmpl",
+    "gowork",
     "comment",
     "dockerfile",
     "helm",
