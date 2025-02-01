@@ -1,3 +1,7 @@
+-- https://neovim.io/doc/user/map.html#%3Amap-verbose
+-- listing a key map will also display where it was last defined
+-- nvim -V1, :verbose map or :verbose map <leader>ca
+
 require "nvchad.mappings"
 
 local set = vim.keymap.set
@@ -33,6 +37,9 @@ set("n", "<leader>c", function()
   require("nvchad.tabufline").close_buffer()
 end, { desc = "buffer close" })
 del("n", "<leader>x")
+del("n", "<leader>m")
+del("n", "<leader>s")
+del("n", "<leader>j")
 
 -- close buffers
 set("n", "<leader>bc", function()
