@@ -58,6 +58,12 @@ return {
       },
     },
   },
+  {
+    "stevearc/resession.nvim",
+    config = function()
+      require "configs.resession"
+    end,
+  },
   { "stevearc/dressing.nvim" },
   {
     "windwp/nvim-ts-autotag",

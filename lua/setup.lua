@@ -1,3 +1,4 @@
+require("resession").setup()
 require("dressing").setup(require "configs.dressing_config")
 require("gitsigns").setup(require "configs.gitsigns_config")
 require("mason-lspconfig").setup()

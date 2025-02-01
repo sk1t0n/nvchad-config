@@ -9,7 +9,7 @@ This is a user configuration for Neovim based on [NvChad](https://github.com/NvC
   - [conform.nvim](https://github.com/stevearc/conform.nvim) (automatic formatting of code ([golines](https://mason-registry.dev/registry/list?search=golines#golines), [PHP CS Fixer](https://mason-registry.dev/registry/list?search=php-cs-fixer#php-cs-fixer), [biomejs](https://mason-registry.dev/registry/list?search=biome#biome)), they need be installed using Mason or in another way, for JS/TS you need add the configuration file [biome.json](https://github.com/sk1t0n/nvchad_config/blob/master/biome.json) in the root folder, for YAML you need add the configuration file [yamlfmt.yml](https://github.com/sk1t0n/nvchad_config/blob/master/yamlfmt.yml) in the root folder, for PHP you may add the configuration file [.php-cs-fixer.dist.php](https://github.com/sk1t0n/nvchad_config/blob/master/.php-cs-fixer.dist.php) in the root folder),
   - [nvim-lint](https://github.com/mfussenegger/nvim-lint) (code check for compliance with standards for Go ([golangci-lint](https://mason-registry.dev/registry/list?search=golangci#golangci-lint)), PHP ([PHP CS Fixer](https://mason-registry.dev/registry/list?search=php-cs-fixer#php-cs-fixer), [phpstan](https://mason-registry.dev/registry/list?search=phpstan#phpstan)), JS/TS ([biomejs](https://mason-registry.dev/registry/list?search=biome#biome)), they need be installed using Mason or in another way),
   - [nvim-dap](https://github.com/mfussenegger/nvim-dap) (debugging for Go ([delve](https://github.com/go-delve/delve/tree/master/Documentation/installation)), PHP ([vscode-php-debug](https://mason-registry.dev/registry/list?search=php-debug-adapter#php-debug-adapter)), they need be installed using Mason or in another way),
-  - others (Git, [refactoring.nvim](https://github.com/ThePrimeagen/refactoring.nvim), [actions-preview.nvim](https://github.com/aznhe21/actions-preview.nvim), [inlay-hints.nvim](https://github.com/simrat39/inlay-hints.nvim), [TreeSJ](https://github.com/Wansmer/treesj), [Todo Comments](https://github.com/folke/todo-comments.nvim) etc)
+  - others (Git, [resession.nvim](https://github.com/stevearc/resession.nvim), [refactoring.nvim](https://github.com/ThePrimeagen/refactoring.nvim), [actions-preview.nvim](https://github.com/aznhe21/actions-preview.nvim), [inlay-hints.nvim](https://github.com/simrat39/inlay-hints.nvim), [TreeSJ](https://github.com/Wansmer/treesj), [Todo Comments](https://github.com/folke/todo-comments.nvim) etc)
 - [Override mappings](#mappings).
 - Change [nvim-tree.lua](https://github.com/nvim-tree/nvim-tree.lua) to [neo-tree.nvim](https://github.com/nvim-neo-tree/neo-tree.nvim).
 
@@ -129,6 +129,9 @@ nvim
 | n    | \<Space>c               | buffer close                                    |
 | n    | \<Space>bc              | close all buffers except current                |
 | n    | \<Space>bC              | close all buffers                               |
+| n    | \<Space>ss              | session save                                    |
+| n    | \<Space>sl              | session load                                    |
+| n    | \<Space>sd              | session delete                                  |
 | n, t | \<Alt> + v              | toggle vertical terminal                        |
 | n, t | \<Alt> + h              | toggle horizontal terminal                      |
 | n, t | \<Alt> + i              | toggle floating terminal                        |

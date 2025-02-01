@@ -41,6 +41,11 @@ del("n", "<leader>m")
 del("n", "<leader>s")
 del("n", "<leader>j")
 
+-- Sessions
+set("n", "<leader>ss", require("resession").save, { desc = "session save" })
+set("n", "<leader>sl", require("resession").load, { desc = "session load" })
+set("n", "<leader>sd", require("resession").delete, { desc = "session delete" })
+
 -- close buffers
 set("n", "<leader>bc", function()
   require("nvchad.tabufline").closeAllBufs(false)
