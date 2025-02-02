@@ -1,3 +1,13 @@
+local nvim_data = vim.fn.stdpath "data"
+
+if os.getenv "OS" == "Windows_NT" then
+  nvim_data = nvim_data:gsub("\\", "/")
+end
+
+require("dap-vscode-js").setup {
+  debugger_path = nvim_data .. "/lazy/vscode-js-debug",
+  adapters = { "node" },
+}
 require("resession").setup()
 require("dressing").setup(require "configs.dressing_config")
 require("gitsigns").setup(require "configs.gitsigns_config")

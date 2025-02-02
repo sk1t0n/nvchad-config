@@ -1,8 +1,8 @@
 local ok, dap = pcall(require, "dap")
-local path_pkg = vim.fn.stdpath "data" .. "/mason/packages/"
+local mason_path = vim.fn.stdpath "data" .. "/mason/packages/"
 
 if os.getenv "OS" == "Windows_NT" then
-  path_pkg = path_pkg:gsub("\\", "/")
+  mason_path = mason_path:gsub("\\", "/")
 end
 
 if not ok then
@@ -26,13 +26,30 @@ dap.configurations = {
       program = "${file}",
     },
   },
+  javascript = {
+    {
+      name = "Launch file",
+      type = "node",
+      request = "launch",
+      program = "${file}",
+      cwd = vim.fn.getcwd(),
+      sourceMaps = true,
+    },
+    {
+      name = "Attach",
+      type = "node",
+      request = "attach",
+      cwd = vim.fn.getcwd(),
+      sourceMaps = true,
+    },
+  },
 }
 
 dap.adapters = {
   php = {
     type = "executable",
     command = "node",
-    args = { path_pkg .. "php-debug-adapter/extension/out/phpDebug.js" },
+    args = { mason_path .. "php-debug-adapter/extension/out/phpDebug.js" },
   },
   go = {
     type = "server",
@@ -41,6 +58,18 @@ dap.adapters = {
     executable = {
       command = "dlv",
       args = { "dap", "-l", "127.0.0.1:8086", "--log" },
+    },
+  },
+  node = {
+    type = "server",
+    host = "127.0.0.1",
+    port = "${port}",
+    executable = {
+      command = "node",
+      args = {
+        mason_path .. "js-debug-adapter/js-debug/src/dapDebugServer.js",
+        "${port}",
+      },
     },
   },
 }
