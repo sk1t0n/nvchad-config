@@ -37,6 +37,8 @@ return {
     "gitattributes",
     "gitcommit",
     "gitignore",
+    "query",
+    "regex",
     "toml",
     "yaml",
     "xml",
