@@ -82,7 +82,17 @@ return {
       "nvim-lua/plenary.nvim",
       "antoinemadec/FixCursorHold.nvim",
       "nvim-treesitter/nvim-treesitter",
+      {
+        "fredrikaverpil/neotest-golang",
+        version = "*",
+        dependencies = { "andythigpen/nvim-coverage" },
+      },
+      "V13Axel/neotest-pest",
+      "nvim-neotest/neotest-jest",
     },
+    config = function()
+      require "configs.neotest"
+    end,
   },
   {
     "mfussenegger/nvim-dap",

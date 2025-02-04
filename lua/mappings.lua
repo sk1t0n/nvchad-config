@@ -114,6 +114,13 @@ set("n", "<leader>gd", "<cmd>Gitsigns diffthis<CR>", { desc = "git diff" })
 set("n", "<leader>gl", "<cmd>Flog<CR>", { desc = "git log" })
 set("n", "<leader>gs", "<cmd>Floggit<CR>", { desc = "git status" })
 
+-- Test Runners
+set("n", "<leader>tt", "<cmd>lua require('neotest').run.run()<CR>", { desc = "run the nearest test" })
+set("n", "<leader>to", require("neotest").output.open, { desc = "displays output of test" })
+set("n", "<leader>tf", "<cmd>lua require('neotest').run.run(vim.fn.expand('%'))<CR>", { desc = "run the current file" })
+set("n", "<leader>td", "<cmd>lua require('neotest').run.run(vim.fn.getcwd())<CR>", { desc = "run the directory test" })
+set("n", "<leader>ts", require("neotest").summary.toggle, { desc = "displays test suite structure from project root" })
+
 -- Todo comments
 set("n", "]t", function()
   require("todo-comments").jump_next()
