@@ -28,7 +28,7 @@ dap.configurations = {
   },
   javascript = {
     {
-      name = "Launch file",
+      name = "Launch file (Node.js)",
       type = "node",
       request = "launch",
       program = "${file}",
@@ -36,7 +36,7 @@ dap.configurations = {
       sourceMaps = true,
     },
     {
-      name = "Attach",
+      name = "Attach (Node.js)",
       type = "node",
       request = "attach",
       cwd = vim.fn.getcwd(),
