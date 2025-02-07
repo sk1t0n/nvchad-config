@@ -10,6 +10,9 @@ require("neotest").setup {
       },
     },
     require "neotest-pest",
+    require "neotest-rust" {
+      args = {},
+    },
     require "neotest-jest" {
       jestCommand = "npm test",
       jestConfigFile = "jest.config.ts",

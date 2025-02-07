@@ -3,6 +3,8 @@ local options = {
     php = { "pint", "php_cs_fixer", stop_after_first = true },
     go = { "gofmt", "goimports", "golines" },
     ruby = { "rufo" },
+    rust = { "rustfmt" },
+    lua = { "stylua" },
     yaml = { "yamlfmt" },
   },
 

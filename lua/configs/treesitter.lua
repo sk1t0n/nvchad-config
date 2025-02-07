@@ -30,6 +30,7 @@ return {
     "ruby",
     "rbs",
     "embedded_template",
+    "rust",
     "comment",
     "dockerfile",
     "helm",

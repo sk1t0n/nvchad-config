@@ -27,6 +27,13 @@ return {
   },
   { "L3MON4D3/LuaSnip" },
   {
+    "Exafunction/codeium.nvim",
+    dependencies = {
+      "nvim-lua/plenary.nvim",
+      "hrsh7th/nvim-cmp",
+    },
+  },
+  {
     "nvim-treesitter/nvim-treesitter",
     opts = require "configs.treesitter",
   },
@@ -88,6 +95,7 @@ return {
         dependencies = { "andythigpen/nvim-coverage" },
       },
       "V13Axel/neotest-pest",
+      "rouge8/neotest-rust",
       "nvim-neotest/neotest-jest",
     },
     config = function()
@@ -173,13 +181,11 @@ return {
     dependencies = { "nvim-treesitter/nvim-treesitter" },
   },
   {
-    "Exafunction/codeium.nvim",
+    "simrat39/inlay-hints.nvim",
     dependencies = {
-      "nvim-lua/plenary.nvim",
-      "hrsh7th/nvim-cmp",
+      "simrat39/rust-tools.nvim",
     },
   },
-  { "simrat39/inlay-hints.nvim" },
   {
     "ThePrimeagen/refactoring.nvim",
     dependencies = {
