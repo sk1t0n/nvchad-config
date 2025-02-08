@@ -13,6 +13,12 @@ require("zen-mode").setup {
   window = {
     width = 0.75, -- width will be 75% of the editor width
   },
+  on_open = function()
+    vim.o.statusline = "%!v:lua.require('nvchad.stl.vscode')()"
+  end,
+  on_close = function()
+    vim.o.statusline = "%!v:lua.require('nvchad.stl.default')()"
+  end,
 }
 require("dressing").setup(require "configs.dressing_config")
 require("gitsigns").setup(require "configs.gitsigns_config")
