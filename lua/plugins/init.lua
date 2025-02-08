@@ -148,14 +148,19 @@ return {
     },
   },
   {
-    "rbong/vim-flog",
+    "kdheepak/lazygit.nvim",
     lazy = true,
-    cmd = { "Flog", "Flogsplit", "Floggit" },
+    cmd = {
+      "LazyGit",
+      "LazyGitConfig",
+      "LazyGitCurrentFile",
+      "LazyGitFilter",
+      "LazyGitFilterCurrentFile",
+    },
     dependencies = {
-      "tpope/vim-fugitive",
+      "nvim-lua/plenary.nvim",
     },
   },
-  { "sindrets/diffview.nvim" },
   {
     "ggandor/leap.nvim",
     lazy = false,

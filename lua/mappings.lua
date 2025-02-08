@@ -84,12 +84,12 @@ end, { desc = "start/stop debug" })
 set("n", "<leader>dd", function()
   require("dap").disconnect()
 end, { desc = "disconnect debug" })
-set("n", "<leader>do", function()
-  require("dap").step_over()
-end, { desc = "debug step over" })
 set("n", "<leader>di", function()
   require("dap").step_into()
 end, { desc = "debug step into" })
+set("n", "<leader>do", function()
+  require("dap").step_over()
+end, { desc = "debug step over" })
 set("n", "<leader>dp", function()
   require("dap").step_out()
 end, { desc = "debug step out" })
@@ -110,9 +110,7 @@ set("n", "bt", "<cmd>TSJToggle<CR>", { desc = "splitting/joining blocks of code"
 set({ "n", "v" }, "<leader>rr", require("refactoring").select_refactor, { desc = "select Refactor" })
 
 --  Git
-set("n", "<leader>gd", "<cmd>Gitsigns diffthis<CR>", { desc = "git diff" })
-set("n", "<leader>gl", "<cmd>Flog<CR>", { desc = "git log" })
-set("n", "<leader>gs", "<cmd>Floggit<CR>", { desc = "git status" })
+set("n", "<leader>g", "<cmd>LazyGitFilter<CR>", { desc = "LazyGit" })
 
 -- Test Runners
 set("n", "<leader>tt", "<cmd>lua require('neotest').run.run()<CR>", { desc = "run the nearest test" })
