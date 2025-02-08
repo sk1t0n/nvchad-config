@@ -112,6 +112,9 @@ set({ "n", "v" }, "<leader>rr", require("refactoring").select_refactor, { desc =
 --  Git
 set("n", "<leader>g", "<cmd>LazyGitFilter<CR>", { desc = "LazyGit" })
 
+-- Zen Mode
+set("n", "<leader>z", "<cmd>ZenMode<CR>", { desc = "Zen Mode" })
+
 -- Test Runners
 set("n", "<leader>tt", "<cmd>lua require('neotest').run.run()<CR>", { desc = "run the nearest test" })
 set("n", "<leader>to", require("neotest").output.open, { desc = "displays output of test" })

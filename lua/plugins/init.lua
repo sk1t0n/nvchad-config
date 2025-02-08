@@ -71,6 +71,7 @@ return {
       require "configs.resession"
     end,
   },
+  { "folke/zen-mode.nvim" },
   { "stevearc/dressing.nvim" },
   {
     "windwp/nvim-ts-autotag",

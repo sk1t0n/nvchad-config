@@ -9,6 +9,11 @@ require("dap-vscode-js").setup {
   adapters = { "node" },
 }
 require("resession").setup()
+require("zen-mode").setup {
+  window = {
+    width = 0.75, -- width will be 75% of the editor width
+  },
+}
 require("dressing").setup(require "configs.dressing_config")
 require("gitsigns").setup(require "configs.gitsigns_config")
 require("mason-lspconfig").setup()
