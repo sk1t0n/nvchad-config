@@ -7,19 +7,25 @@ require "nvchad.mappings"
 local set = vim.keymap.set
 local del = vim.keymap.del
 
--- override NvChad
-set("n", "<leader>e", "<cmd>Neotree toggle<CR>", { desc = "toggle Neotree" })
-del("n", "<C-n>")
-del("n", "<leader>b")
+-- Override mappings
+-- NvChad https://github.com/NvChad/NvChad/blob/v2.5/lua/nvchad/mappings.lua
 set("n", "<leader>n", "<cmd>enew<CR>", { desc = "buffer new" })
 del("n", "<leader>rn")
 del("n", "<leader>ch")
+set("n", "<leader>h", "<cmd>NvCheatsheet<CR>", { desc = "mappings" })
 del("n", "<leader>fm")
 set("n", "<C-\\>", function()
   require("conform").format { lsp_fallback = true }
 end, { desc = "general format file" })
 del("n", "<leader>ds")
 set("n", "<leader>ld", vim.diagnostic.setloclist, { desc = "LSP diagnostic loclist" })
+del("n", "<leader>b")
+del("n", "<leader>x")
+set("n", "<leader>c", function()
+  require("nvchad.tabufline").close_buffer()
+end, { desc = "buffer close" })
+del("n", "<C-n>")
+set("n", "<leader>e", "<cmd>Neotree toggle<CR>", { desc = "toggle Neotree" })
 del("n", "<leader>ma")
 set("n", "<leader>fm", "<cmd>Telescope marks<CR>", { desc = "telescope find marks" })
 del("n", "<leader>cm")
@@ -31,15 +37,11 @@ del("n", "<leader>th")
 set("n", "<leader>ft", function()
   require("nvchad.themes").open()
 end, { desc = "telescope nvchad themes" })
-set({ "n", "v" }, "<leader>h", "<cmd>NvCheatsheet<CR>", { desc = "mappings" })
 del("n", "<leader>v")
-set("n", "<leader>c", function()
-  require("nvchad.tabufline").close_buffer()
-end, { desc = "buffer close" })
-del("n", "<leader>x")
-del("n", "<leader>m")
-del("n", "<leader>s")
+-- others
 del("n", "<leader>j")
+del("n", "<leader>s")
+del("n", "<leader>m")
 
 -- Sessions
 set("n", "<leader>ss", require("resession").save, { desc = "session save" })
@@ -104,7 +106,7 @@ set("n", "<leader>ls", vim.lsp.buf.signature_help, { desc = "LSP signature help"
 set({ "n", "v" }, "<leader>la", require("actions-preview").code_actions, { desc = "LSP code action" })
 
 -- Splitting/joining blocks of code
-set("n", "bt", "<cmd>TSJToggle<CR>", { desc = "splitting/joining blocks of code" })
+set("n", "<leader>rb", "<cmd>TSJToggle<CR>", { desc = "splitting/joining blocks of code" })
 
 -- Refactoring
 set({ "n", "v" }, "<leader>rr", require("refactoring").select_refactor, { desc = "select Refactor" })
