@@ -16,6 +16,7 @@ local servers = {
   "ruby_lsp",
   "rubocop",
   "rust_analyzer",
+  "zls",
   "lua_ls",
   "sqls",
   "marksman",

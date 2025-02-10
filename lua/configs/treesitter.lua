@@ -31,6 +31,7 @@ return {
     "rbs",
     "embedded_template",
     "rust",
+    "zig",
     "comment",
     "dockerfile",
     "helm",
