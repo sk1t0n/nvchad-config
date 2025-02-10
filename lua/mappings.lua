@@ -18,7 +18,7 @@ set("n", "<C-\\>", function()
   require("conform").format { lsp_fallback = true }
 end, { desc = "general format file" })
 del("n", "<leader>ds")
-set("n", "<leader>ld", vim.diagnostic.setloclist, { desc = "LSP diagnostic loclist" })
+set("n", "<leader>ld", vim.diagnostic.setloclist, { desc = "LSP/Linter diagnostic loclist" })
 del("n", "<leader>b")
 del("n", "<leader>x")
 set("n", "<leader>c", function()
@@ -97,13 +97,16 @@ set("n", "<leader>dp", function()
 end, { desc = "debug step out" })
 
 -- LSP
-set("n", "gD", vim.lsp.buf.declaration, { desc = "go to declaration" })
 set("n", "gd", vim.lsp.buf.definition, { desc = "go to definition" })
+set("n", "gD", vim.lsp.buf.declaration, { desc = "go to declaration" })
 set("n", "gi", vim.lsp.buf.implementation, { desc = "go to implementation" })
+set("n", "<leader>ldf", vim.diagnostic.open_float, { desc = "LSP/Linter diagnostic float" })
 set("n", "<leader>lr", vim.lsp.buf.references, { desc = "LSP references" })
 set("n", "<leader>lR", vim.lsp.buf.rename, { desc = "LSP rename in buffer" })
+set("n", "<leader>lh", vim.lsp.buf.hover, { desc = "LSP hover" })
 set("n", "<leader>ls", vim.lsp.buf.signature_help, { desc = "LSP signature help" })
 set({ "n", "v" }, "<leader>la", require("actions-preview").code_actions, { desc = "LSP code action" })
+set("n", "<leader>lws", vim.lsp.buf.workspace_symbol, { desc = "LSP workspace symbol" })
 
 -- Splitting/joining blocks of code
 set("n", "<leader>rb", "<cmd>TSJToggle<CR>", { desc = "splitting/joining blocks of code" })
