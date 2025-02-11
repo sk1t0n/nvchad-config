@@ -12,7 +12,6 @@ return {
     dependencies = "neovim/nvim-lspconfig",
     event = "VeryLazy",
     opts = {
-      -- your options here
       -- aggressive_mode = false
       -- grace_period = 60 * 15
     },
@@ -180,6 +179,10 @@ return {
     end,
   },
   { "kevinhwang91/nvim-bqf", ft = "qf" },
+  {
+    "numToStr/Comment.nvim",
+    opts = {},
+  },
   {
     "folke/todo-comments.nvim",
     dependencies = { "nvim-lua/plenary.nvim" },
