@@ -73,6 +73,9 @@ set("n", "<C-Right>", "<Cmd>vertical resize +2<CR>", { desc = "increase window w
 -- Mason
 set("n", "<leader>p", "<cmd>Mason<CR>", { desc = "mason" })
 
+-- Glow
+set("n", "<leader>pm", "<cmd>Glow<CR>", { desc = "preview markdown in current buffer" })
+
 -- Telescope
 set("n", "<leader>fp", "<cmd>Telescope projects<CR>", { desc = "telescope recent projects" })
 

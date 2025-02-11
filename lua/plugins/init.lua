@@ -215,4 +215,5 @@ return {
       require("project_nvim").setup()
     end,
   },
+  { "ellisonleao/glow.nvim", config = true, cmd = "Glow" },
 }
