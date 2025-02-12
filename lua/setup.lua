@@ -53,7 +53,7 @@ require("actions-preview").setup {
   },
 }
 require("treesj").setup()
-require("codeium").setup()
+require("codeium").setup(require "configs.codeium_config")
 require("inlay-hints").setup()
 require("refactoring").setup {
   prompt_func_return_type = {
