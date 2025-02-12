@@ -230,4 +230,5 @@ return {
   },
   { "ellisonleao/glow.nvim", config = true, cmd = "Glow" },
   { "brenoprata10/nvim-highlight-colors" },
+  { "karb94/neoscroll.nvim" },
 }
