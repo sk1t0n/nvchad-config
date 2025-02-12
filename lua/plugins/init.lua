@@ -232,4 +232,5 @@ return {
   { "brenoprata10/nvim-highlight-colors" },
   { "karb94/neoscroll.nvim" },
   { "m4xshen/smartcolumn.nvim" },
+  { "nvim-focus/focus.nvim", version = "*" },
 }
