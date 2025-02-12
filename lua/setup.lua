@@ -63,3 +63,4 @@ require("refactoring").setup {
     go = true,
   },
 }
+require("nvim-highlight-colors").setup {}
