@@ -233,4 +233,13 @@ return {
   { "karb94/neoscroll.nvim" },
   { "m4xshen/smartcolumn.nvim" },
   { "nvim-focus/focus.nvim", version = "*" },
+  {
+    "folke/noice.nvim",
+    event = "VeryLazy",
+    opts = {},
+    dependencies = {
+      "MunifTanjim/nui.nvim",
+      "rcarriga/nvim-notify",
+    },
+  },
 }
