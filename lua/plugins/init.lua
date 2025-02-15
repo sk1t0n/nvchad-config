@@ -243,4 +243,8 @@ return {
     },
   },
   { "gelguy/wilder.nvim" },
+  {
+    "adelarsq/image_preview.nvim",
+    event = "VeryLazy",
+  },
 }

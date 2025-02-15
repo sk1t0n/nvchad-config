@@ -18,7 +18,7 @@ This is a user configuration for Neovim based on [NvChad](https://github.com/NvC
 ## ⚡ Requirements
 
 - [Nerd Fonts](https://www.nerdfonts.com/font-downloads) - for to support icons in fonts (example configuration file for [WezTerm](https://github.com/sk1t0n/ubuntu_configs/blob/master/home/anton/.wezterm.lua))
-- [WezTerm](https://wezterm.org) - for plugins [image_preview.nvim](https://github.com/adelarsq/image_preview.nvim), [wezterm.nvim](https://github.com/willothy/wezterm.nvim)
+- [WezTerm](https://wezterm.org) - for plugins [image_preview.nvim](https://github.com/adelarsq/image_preview.nvim) (CTRL + p in Neotree), [wezterm.nvim](https://github.com/willothy/wezterm.nvim)
 - [Neovim](https://github.com/neovim/neovim/blob/master/INSTALL.md)
 
 ## 🛠️ Installation

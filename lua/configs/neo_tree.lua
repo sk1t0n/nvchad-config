@@ -232,7 +232,7 @@ M.setup = function()
           ["on"] = { "order_by_name", nowait = false },
           ["os"] = { "order_by_size", nowait = false },
           ["ot"] = { "order_by_type", nowait = false },
-          -- ['<key>'] = function(state) ... end,
+          ["<c-p>"] = { "image_wezterm" },
         },
         fuzzy_finder_mappings = { -- define keymaps for filter popup window in fuzzy_finder_mode
           ["<down>"] = "move_cursor_down",
@@ -243,7 +243,14 @@ M.setup = function()
         },
       },
 
-      commands = {}, -- Add a custom command or override a global one using the same function name
+      commands = {
+        image_wezterm = function(state)
+          local node = state.tree:get_node()
+          if node.type == "file" then
+            require("image_preview").PreviewImage(node.path)
+          end
+        end,
+      },
     },
     buffers = {
       follow_current_file = {
