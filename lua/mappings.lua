@@ -70,6 +70,20 @@ set("n", "<C-Down>", "<Cmd>resize +2<CR>", { desc = "increase window height" })
 set("n", "<C-Left>", "<Cmd>vertical resize -2<CR>", { desc = "decrease window width" })
 set("n", "<C-Right>", "<Cmd>vertical resize +2<CR>", { desc = "increase window width" })
 
+-- WezTerm
+set("n", "<leader>ww", function()
+  local input = vim.fn.input "Program: "
+  local program
+  local args = {}
+
+  for arg in input:gmatch "%S+" do
+    table.insert(args, arg)
+  end
+
+  program = table.remove(args, 1)
+  require("wezterm").spawn(program, { args = args })
+end, { desc = "WezTerm run a program with arguments" })
+
 -- Mason
 set("n", "<leader>p", "<cmd>Mason<CR>", { desc = "mason" })
 

@@ -247,4 +247,5 @@ return {
     "adelarsq/image_preview.nvim",
     event = "VeryLazy",
   },
+  { "willothy/wezterm.nvim" },
 }

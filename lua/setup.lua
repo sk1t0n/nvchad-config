@@ -68,3 +68,4 @@ require("neoscroll").setup(require "configs.neoscroll_config")
 require("smartcolumn").setup()
 require("focus").setup()
 require "configs.wilder"
+require("wezterm").setup {}
