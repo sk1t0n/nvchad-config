@@ -13,7 +13,7 @@ This is a user configuration for Neovim based on [NvChad](https://github.com/NvC
   - [neotest](https://github.com/nvim-neotest/neotest) (run tests for Go ([neotest-golang](https://github.com/fredrikaverpil/neotest-golang)), PHP ([neotest-pest](https://github.com/V13Axel/neotest-pest)), Rust ([neotest-rust](https://github.com/rouge8/neotest-rust), [Nextest](https://github.com/nextest-rs/nextest)))
   - others (Git ([lazygit.nvim](https://github.com/kdheepak/lazygit.nvim), [gitsigns.nvim](https://github.com/lewis6991/gitsigns.nvim)), [resession.nvim](https://github.com/stevearc/resession.nvim), [refactoring.nvim](https://github.com/ThePrimeagen/refactoring.nvim), [actions-preview.nvim](https://github.com/aznhe21/actions-preview.nvim), [TreeSJ](https://github.com/Wansmer/treesj), [Comment.nvim](https://github.com/numToStr/Comment.nvim), [Todo Comments](https://github.com/folke/todo-comments.nvim), [Zen Mode](https://github.com/folke/zen-mode.nvim), [project.nvim](https://github.com/ahmedkhalf/project.nvim), [glow.nvim](https://github.com/ellisonleao/glow.nvim), [garbage-day.nvim](https://github.com/Zeioth/garbage-day.nvim), [Neoscroll](https://github.com/karb94/neoscroll.nvim), [noice.nvim](https://github.com/folke/noice.nvim), [wilder.nvim](https://github.com/gelguy/wilder.nvim) etc)
 - [Override mappings](#mappings).
-- Change [nvim-tree.lua](https://github.com/nvim-tree/nvim-tree.lua) to [neo-tree.nvim](https://github.com/nvim-neo-tree/neo-tree.nvim)  (file system management).
+- Change [nvim-tree.lua](https://github.com/nvim-tree/nvim-tree.lua) to [neo-tree.nvim](https://github.com/nvim-neo-tree/neo-tree.nvim) (file system management).
 
 ## ⚡ Requirements
 
@@ -78,6 +78,26 @@ nvim
 - `go install github.com/nametake/golangci-lint-langserver@latest` and `:MasonInstall golangcilint` - install lint server and client for Go
 
 ## Mappings
+
+### WezTerm ([.wezterm.lua](https://github.com/sk1t0n/ubuntu_configs/blob/master/home/anton/.wezterm.lua#L16))
+
+| key                        | description                   |
+| -------------------------- | ----------------------------- |
+| ALT + Enter                | toggle full screen mode       |
+| CTRL + SHIFT + C           | copy to the clipboard         |
+| CTRL + SHIFT + V           | paste from the clipboard      |
+| CTRL + Tab                 | go to the next tab            |
+| CTRL + SHIFT + Tab         | go to the previous tab        |
+| CTRL + SHIFT + ALT + N     | create a new tab              |
+| CTRL + SHIFT + ALT + C     | close the current pane or tab |
+| CTRL + SHIFT + ALT + "     | create a new vertical pane    |
+| CTRL + SHIFT + ALT + #     | create a new horizontal pane  |
+| CTRL + SHIFT + ALT + Left  | switch to the left pane       |
+| CTRL + SHIFT + ALT + Right | switch to the right pane      |
+| CTRL + SHIFT + ALT + Up    | switch to the top pane        |
+| CTRL + SHIFT + ALT + Down  | switch to the bottom pane     |
+
+### Neovim
 
 | mode | key                             | description                                                                                                                                                                                               |
 | ---- | ------------------------------- | --------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
