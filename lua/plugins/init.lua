@@ -242,4 +242,5 @@ return {
       "rcarriga/nvim-notify",
     },
   },
+  { "gelguy/wilder.nvim" },
 }

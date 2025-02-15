@@ -11,36 +11,14 @@ This is a user configuration for Neovim based on [NvChad](https://github.com/NvC
   - [nvim-lint](https://github.com/mfussenegger/nvim-lint) (code check for compliance with standards for Go ([golangci-lint](https://mason-registry.dev/registry/list?search=golangci#golangci-lint)), PHP ([PHP CS Fixer](https://mason-registry.dev/registry/list?search=php-cs-fixer#php-cs-fixer), [phpstan](https://mason-registry.dev/registry/list?search=phpstan#phpstan)), Ruby ([rubocop](https://mason-registry.dev/registry/list?search=rubocop#rubocop)), JS/TS ([biomejs](https://mason-registry.dev/registry/list?search=biome#biome)), they need be installed using Mason or in another way),
   - [nvim-dap](https://github.com/mfussenegger/nvim-dap) (debugging for Go ([delve](https://github.com/go-delve/delve/tree/master/Documentation/installation)), PHP ([vscode-php-debug](https://mason-registry.dev/registry/list?search=php-debug-adapter#php-debug-adapter)) - it need be installed using Mason),
   - [neotest](https://github.com/nvim-neotest/neotest) (run tests for Go ([neotest-golang](https://github.com/fredrikaverpil/neotest-golang)), PHP ([neotest-pest](https://github.com/V13Axel/neotest-pest)), Rust ([neotest-rust](https://github.com/rouge8/neotest-rust), [Nextest](https://github.com/nextest-rs/nextest)))
-  - others (Git ([lazygit.nvim](https://github.com/kdheepak/lazygit.nvim), [gitsigns.nvim](https://github.com/lewis6991/gitsigns.nvim)), [resession.nvim](https://github.com/stevearc/resession.nvim), [refactoring.nvim](https://github.com/ThePrimeagen/refactoring.nvim), [actions-preview.nvim](https://github.com/aznhe21/actions-preview.nvim), [TreeSJ](https://github.com/Wansmer/treesj), [Comment.nvim](https://github.com/numToStr/Comment.nvim), [Todo Comments](https://github.com/folke/todo-comments.nvim), [Zen Mode](https://github.com/folke/zen-mode.nvim), [project.nvim](https://github.com/ahmedkhalf/project.nvim), [glow.nvim](https://github.com/ellisonleao/glow.nvim), [garbage-day.nvim](https://github.com/Zeioth/garbage-day.nvim), [Neoscroll](https://github.com/karb94/neoscroll.nvim), [noice.nvim](https://github.com/folke/noice.nvim) etc)
+  - others (Git ([lazygit.nvim](https://github.com/kdheepak/lazygit.nvim), [gitsigns.nvim](https://github.com/lewis6991/gitsigns.nvim)), [resession.nvim](https://github.com/stevearc/resession.nvim), [refactoring.nvim](https://github.com/ThePrimeagen/refactoring.nvim), [actions-preview.nvim](https://github.com/aznhe21/actions-preview.nvim), [TreeSJ](https://github.com/Wansmer/treesj), [Comment.nvim](https://github.com/numToStr/Comment.nvim), [Todo Comments](https://github.com/folke/todo-comments.nvim), [Zen Mode](https://github.com/folke/zen-mode.nvim), [project.nvim](https://github.com/ahmedkhalf/project.nvim), [glow.nvim](https://github.com/ellisonleao/glow.nvim), [garbage-day.nvim](https://github.com/Zeioth/garbage-day.nvim), [Neoscroll](https://github.com/karb94/neoscroll.nvim), [noice.nvim](https://github.com/folke/noice.nvim), [wilder.nvim](https://github.com/gelguy/wilder.nvim) etc)
 - [Override mappings](#mappings).
 - Change [nvim-tree.lua](https://github.com/nvim-tree/nvim-tree.lua) to [neo-tree.nvim](https://github.com/nvim-neo-tree/neo-tree.nvim)  (file system management).
 
 ## ⚡ Requirements
 
-- [Nerd Fonts](https://www.nerdfonts.com/font-downloads) - for to support icons in fonts
-
-  Example configuration file for [Alacritty](https://alacritty.org/index.html)
-
-  ```toml
-  # https://github.com/alacritty/alacritty/tree/master#configuration
-
-  [window]
-
-  padding.x = 5
-  padding.y = 5
-
-  opacity = 0.92
-  blur = true
-
-  decorations = "Full"
-  decorations_theme_variant = "Dark" # "Light"
-
-  [font]
-
-  size = 15.0
-  normal.family = "JetBrainsMono Nerd Font"
-  ```
-
+- [Nerd Fonts](https://www.nerdfonts.com/font-downloads) - for to support icons in fonts (example configuration file for [WezTerm](https://github.com/sk1t0n/ubuntu_configs/blob/master/home/anton/.wezterm.lua))
+- [WezTerm](https://wezterm.org) - for plugins [image_preview.nvim](https://github.com/adelarsq/image_preview.nvim), [wezterm.nvim](https://github.com/willothy/wezterm.nvim)
 - [Neovim](https://github.com/neovim/neovim/blob/master/INSTALL.md)
 
 ## 🛠️ Installation
@@ -155,6 +133,8 @@ nvim
 | i    | \<Alt> + \[                     | Codeium previous completion                                                                                                                                                                               |
 | i    | \<Alt> + \]                     | Codeium next completion                                                                                                                                                                                   |
 | i    | \<Tab>                          | Codeium accept completion                                                                                                                                                                                 |
+| c    | nn                              | Wilder previous suggestion (\<Down> - accept, \<Up> - reject)                                                                                                                                             |
+| c    | mm                              | Wilder next suggestion (\<Down> - accept, \<Up> - reject)                                                                                                                                                 |
 | n    | \<Space>p                       | Mason                                                                                                                                                                                                     |
 | n    | \<Space>pm                      | preview markdown in current buffer                                                                                                                                                                        |
 | n    | \<Space>z                       | Zen Mode                                                                                                                                                                                                  |
