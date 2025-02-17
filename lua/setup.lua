@@ -20,7 +20,6 @@ require("zen-mode").setup {
     vim.o.statusline = "%!v:lua.require('nvchad.stl.default')()"
   end,
 }
-require("dressing").setup(require "configs.dressing_config")
 require("gitsigns").setup(require "configs.gitsigns_config")
 require("mason-lspconfig").setup()
 require("nvim-ts-autotag").setup()
