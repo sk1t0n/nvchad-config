@@ -154,3 +154,7 @@ end, { desc = "next todo comment" })
 set("n", "[t", function()
   require("todo-comments").jump_prev()
 end, { desc = "previous todo comment" })
+
+-- Move lines
+set("n", "<A-Up>", "<cmd>m -2<CR>", { desc = "move line up" })
+set("n", "<A-Down>", "<cmd>m +1<CR>", { desc = "move line down" })
