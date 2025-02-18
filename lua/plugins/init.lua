@@ -171,11 +171,9 @@ return {
     },
   },
   {
-    "ggandor/leap.nvim",
-    lazy = false,
-    config = function()
-      require("leap").add_default_mappings(true)
-    end,
+    "folke/flash.nvim",
+    event = "VeryLazy",
+    opts = {},
   },
   { "kevinhwang91/nvim-bqf", ft = "qf" },
   {
