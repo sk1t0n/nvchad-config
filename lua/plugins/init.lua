@@ -7,6 +7,7 @@ return {
       require "configs.lspconfig"
     end,
   },
+  { "onsails/lspkind.nvim" },
   {
     "zeioth/garbage-day.nvim",
     dependencies = "neovim/nvim-lspconfig",
