@@ -62,6 +62,11 @@ require("refactoring").setup {
     go = true,
   },
 }
+require("notify").setup {
+  timeout = 1000,
+  stages = "static",
+  render = "compact",
+}
 require("nvim-highlight-colors").setup {}
 require("neoscroll").setup(require "configs.neoscroll_config")
 require("smartcolumn").setup()
