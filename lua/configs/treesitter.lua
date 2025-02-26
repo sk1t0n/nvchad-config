@@ -1,3 +1,9 @@
+vim.filetype.add {
+  pattern = {
+    [".*%.blade%.php"] = "blade",
+  },
+}
+
 require("nvim-treesitter.configs").setup {
   ensure_installed = {
     "vim",
@@ -13,11 +19,13 @@ require("nvim-treesitter.configs").setup {
     "typescript",
     "tsx",
     "vue",
+    "bash",
     "make",
     "markdown",
     "markdown_inline",
     "sql",
     "php",
+    "php_only",
     "phpdoc",
     "twig",
     "c",
@@ -72,10 +80,4 @@ parser_config.blade = {
     branch = "main",
   },
   filetype = "blade",
-}
-
-vim.filetype.add {
-  pattern = {
-    [".*%.blade%.php"] = "blade",
-  },
 }
