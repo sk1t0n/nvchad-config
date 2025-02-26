@@ -1,6 +1,6 @@
 # nvchad_config
 
-This is a user configuration for Neovim based on [NvChad](https://github.com/NvChad/starter). Plugins for Go, PHP, Ruby, Rust, Zig, JavaScript, TypeScript, Lua, HTML, CSS, JSON, YAML, Docker, Markdown are configured.
+This is a user configuration for Neovim based on [NvChad](https://github.com/NvChad/starter). Plugins for Go, PHP, Ruby, Rust, Zig, JavaScript, TypeScript, Lua, HTML, CSS, JSON, YAML, Docker, Markdown are added and configured.
 
 - The configured plugins:
   - [nvim-treesitter](https://github.com/nvim-treesitter/nvim-treesitter) (syntax highlighting),
@@ -12,8 +12,9 @@ This is a user configuration for Neovim based on [NvChad](https://github.com/NvC
   - [nvim-dap](https://github.com/mfussenegger/nvim-dap), [nvim-dap-ui](https://github.com/rcarriga/nvim-dap-ui) (debugging for Go ([delve](https://github.com/go-delve/delve/tree/master/Documentation/installation)), PHP ([vscode-php-debug](https://mason-registry.dev/registry/list?search=php-debug-adapter#php-debug-adapter)) - it need be installed using Mason),
   - [neotest](https://github.com/nvim-neotest/neotest) (run tests for Go ([neotest-golang](https://github.com/fredrikaverpil/neotest-golang)), PHP ([neotest-pest](https://github.com/V13Axel/neotest-pest)), Rust ([neotest-rust](https://github.com/rouge8/neotest-rust), [Nextest](https://github.com/nextest-rs/nextest)))
   - others (Git ([lazygit.nvim](https://github.com/kdheepak/lazygit.nvim), [gitsigns.nvim](https://github.com/lewis6991/gitsigns.nvim)), [refactoring.nvim](https://github.com/ThePrimeagen/refactoring.nvim), [actions-preview.nvim](https://github.com/aznhe21/actions-preview.nvim), [TreeSJ](https://github.com/Wansmer/treesj), [garbage-day.nvim](https://github.com/Zeioth/garbage-day.nvim), [lspkind.nvim](https://github.com/onsails/lspkind.nvim), [Comment.nvim](https://github.com/numToStr/Comment.nvim), [Todo Comments](https://github.com/folke/todo-comments.nvim), [flash.nvim](https://github.com/folke/flash.nvim), [Neoscroll](https://github.com/karb94/neoscroll.nvim), [wilder.nvim](https://github.com/gelguy/wilder.nvim), [smartcolumn.nvim](https://github.com/m4xshen/smartcolumn.nvim), [focus.nvim](https://github.com/nvim-focus/focus.nvim), [glow.nvim](https://github.com/ellisonleao/glow.nvim), [nvim-ts-autotag](https://github.com/windwp/nvim-ts-autotag), [nvim-highlight-colors](https://github.com/brenoprata10/nvim-highlight-colors), [better-escape.nvim](https://github.com/max397574/better-escape.nvim), [nvim-bqf](https://github.com/kevinhwang91/nvim-bqf), [tiny-inline-diagnostic.nvim](https://github.com/rachartier/tiny-inline-diagnostic.nvim), [Trouble](https://github.com/folke/trouble.nvim), [project.nvim](https://github.com/ahmedkhalf/project.nvim), [resession.nvim](https://github.com/stevearc/resession.nvim), [Zen Mode](https://github.com/folke/zen-mode.nvim), [noice.nvim](https://github.com/folke/noice.nvim))
-- [Override mappings](#mappings).
-- Change [nvim-tree.lua](https://github.com/nvim-tree/nvim-tree.lua) to [neo-tree.nvim](https://github.com/nvim-neo-tree/neo-tree.nvim) (file system management).
+- [Overridden mappings](#mappings).
+- Changed [nvim-tree.lua](https://github.com/nvim-tree/nvim-tree.lua) to [neo-tree.nvim](https://github.com/nvim-neo-tree/neo-tree.nvim) (file system management).
+- Added plugins for Laravel ([Tree-Sitter-Blade](https://github.com/EmranMR/tree-sitter-blade), [blade-formatter](https://github.com/shufo/blade-formatter), [blade-nav.nvim](https://github.com/RicardoRamirezR/blade-nav.nvim).
 
 ## ⚡ Requirements
 
@@ -184,6 +185,7 @@ nvim
 | n    | gd                              | go to definition                                                                                                                                                                                          |
 | n    | gD                              | go to declaration                                                                                                                                                                                         |
 | n    | gi                              | go to implementation                                                                                                                                                                                      |
+| n    | gf                              | go to file (blade-nav.nvim)                                                                                                                                                                               |
 | n    | \<Space>xs                      | Trouble toggle symbols                                                                                                                                                                                    |
 | n    | \<Space>xl                      | Trouble toggle LSP definitions, references                                                                                                                                                                |
 | n    | \<Space>xd                      | Trouble toggle diagnostics                                                                                                                                                                                |

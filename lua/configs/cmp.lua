@@ -23,7 +23,7 @@ cmp.setup {
   }),
   formatting = {
     format = lspkind.cmp_format {
-      mode = "symbol", -- show only symbol annotations
+      mode = "symbol_text", -- show symbol and text annotations
       maxwidth = {
         -- prevent the popup from showing more than provided characters (e.g 50 will not show more than 50 characters)
         -- can also be a function to dynamically calculate max width such as

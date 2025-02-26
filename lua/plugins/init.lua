@@ -45,7 +45,9 @@ return {
   },
   {
     "nvim-treesitter/nvim-treesitter",
-    opts = require "configs.treesitter",
+    config = function()
+      require "configs.treesitter"
+    end,
   },
   {
     "nvim-neo-tree/neo-tree.nvim",
@@ -246,4 +248,14 @@ return {
     event = "VeryLazy",
   },
   { "willothy/wezterm.nvim" },
+  {
+    "ricardoramirezr/blade-nav.nvim",
+    dependencies = {
+      "hrsh7th/nvim-cmp",
+    },
+    ft = { "blade", "php" },
+    opts = {
+      close_tag_on_complete = true,
+    },
+  },
 }
