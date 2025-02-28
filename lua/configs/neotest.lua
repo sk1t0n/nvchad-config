@@ -10,6 +10,8 @@ require("neotest").setup {
       },
     },
     require "neotest-pest",
+    require "neotest-rspec",
+    require "neotest-minitest",
     require "neotest-rust" {
       args = {},
     },
