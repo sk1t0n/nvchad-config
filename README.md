@@ -1,6 +1,6 @@
 # nvchad_config
 
-This is a user configuration for Neovim based on [NvChad](https://github.com/NvChad/starter). Plugins for Go, PHP, Ruby, Rust, Zig, JavaScript, TypeScript, Lua, HTML, CSS, JSON, YAML, Docker, Markdown are added and configured.
+This is a user configuration for Neovim based on [NvChad](https://github.com/NvChad/starter). Plugins for PHP (Laravel), Ruby, Go, Rust, Zig, JavaScript, TypeScript, Lua, HTML, CSS (Tailwind), JSON, YAML, Docker, Markdown are added and configured.
 
 - The configured plugins:
   - [nvim-treesitter](https://github.com/nvim-treesitter/nvim-treesitter) (syntax highlighting),
