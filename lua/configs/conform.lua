@@ -4,6 +4,7 @@ local options = {
     blade = { "blade-formatter" },
     go = { "gofmt", "goimports", "golines" },
     ruby = { "rufo" },
+    eruby = { "erb_format" },
     rust = { "rustfmt" },
     lua = { "stylua" },
     yaml = { "yamlfmt" },

@@ -1,6 +1,6 @@
 # nvchad_config
 
-This is a user configuration for Neovim based on [NvChad](https://github.com/NvChad/starter). Plugins for PHP (Laravel), Ruby, Go, Rust, Zig, JavaScript, TypeScript, Lua, HTML, CSS (Tailwind), JSON, YAML, Docker, Markdown are added and configured.
+This is a user configuration for Neovim based on [NvChad](https://github.com/NvChad/starter). Plugins for PHP (Laravel), Ruby (RoR), Go, Rust, Zig, JavaScript, TypeScript, Lua, HTML, CSS (Tailwind), JSON, YAML, Docker, Markdown are added and configured.
 
 - The configured plugins:
   - [nvim-treesitter](https://github.com/nvim-treesitter/nvim-treesitter) (syntax highlighting),
@@ -15,6 +15,7 @@ This is a user configuration for Neovim based on [NvChad](https://github.com/NvC
 - [Overridden mappings](#mappings).
 - Changed [nvim-tree.lua](https://github.com/nvim-tree/nvim-tree.lua) to [neo-tree.nvim](https://github.com/nvim-neo-tree/neo-tree.nvim) (file system management).
 - Added plugins for Laravel ([Tree-Sitter-Blade](https://github.com/EmranMR/tree-sitter-blade), [blade-formatter](https://github.com/shufo/blade-formatter), [blade-nav.nvim](https://github.com/RicardoRamirezR/blade-nav.nvim).
+- Added plugin for Ruby on Rails ([erb-formatter](https://github.com/nebulab/erb-formatter))
 
 ## ⚡ Requirements
 
