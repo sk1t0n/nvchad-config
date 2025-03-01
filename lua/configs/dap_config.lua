@@ -18,6 +18,14 @@ dap.configurations = {
       port = 9003,
     },
   },
+  ruby = {
+    {
+      name = "rdbg (Ruby)",
+      type = "ruby",
+      request = "launch",
+      program = "${file}",
+    },
+  },
   go = {
     {
       name = "Delve (GoLang)",
@@ -45,11 +53,33 @@ dap.configurations = {
   },
 }
 
+local function get_rdbg_path()
+  local handle = io.popen "which rdbg"
+  local result = handle:read "*a"
+  result = result:match "^%s*(.-)%s*$"
+  handle:close()
+
+  if os.getenv "OS" == "Windows_NT" then
+    result = result .. ".bat"
+  end
+
+  return result
+end
+
 dap.adapters = {
   php = {
     type = "executable",
     command = "node",
     args = { mason_path .. "php-debug-adapter/extension/out/phpDebug.js" },
+  },
+  ruby = {
+    type = "server",
+    host = "127.0.0.1",
+    port = "8085",
+    executable = {
+      command = get_rdbg_path(),
+      args = { "--open", "--port", "8085", "--", "*.rb" },
+    },
   },
   go = {
     type = "server",
