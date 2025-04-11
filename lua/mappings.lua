@@ -147,6 +147,8 @@ set("n", "<leader>tf", "<cmd>lua require('neotest').run.run(vim.fn.expand('%'))<
 set("n", "<leader>td", "<cmd>lua require('neotest').run.run(vim.fn.getcwd())<CR>", { desc = "run the directory test" })
 set("n", "<leader>ts", require("neotest").summary.toggle, { desc = "displays test suite structure from project root" })
 
+set("n", "<leader>T", "<cmd>TimerlyToggle<CR>", { desc = "toggle timer" })
+
 -- Todo comments
 set("n", "]t", function()
   require("todo-comments").jump_next()

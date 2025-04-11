@@ -262,4 +262,7 @@ return {
       close_tag_on_complete = true,
     },
   },
+  { "nvzone/timerly", cmd = "TimerlyToggle", config = {
+    position = "top-right",
+  } },
 }
