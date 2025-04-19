@@ -13,8 +13,6 @@ local servers = {
   "ts_ls",
   "intelephense",
   "gopls",
-  "ruby_lsp",
-  "rubocop",
   "rust_analyzer",
   "zls",
   "lua_ls",

@@ -3,8 +3,6 @@ local options = {
     php = { "pint", "php_cs_fixer", stop_after_first = true },
     blade = { "blade-formatter" },
     go = { "gofmt", "goimports", "golines" },
-    ruby = { "rufo" },
-    eruby = { "erb_format" },
     rust = { "rustfmt" },
     lua = { "stylua" },
     yaml = { "yamlfmt" },

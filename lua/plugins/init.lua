@@ -107,8 +107,6 @@ return {
         dependencies = { "andythigpen/nvim-coverage" },
       },
       "V13Axel/neotest-pest",
-      "olimorris/neotest-rspec",
-      "zidhuss/neotest-minitest",
       "rouge8/neotest-rust",
       "nvim-neotest/neotest-jest",
     },
