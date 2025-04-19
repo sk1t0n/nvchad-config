@@ -36,7 +36,6 @@ require("nvim-treesitter.configs").setup {
     "gotmpl",
     "gowork",
     "rust",
-    "zig",
     "comment",
     "dockerfile",
     "helm",

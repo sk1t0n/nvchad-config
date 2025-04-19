@@ -14,7 +14,6 @@ local servers = {
   "intelephense",
   "gopls",
   "rust_analyzer",
-  "zls",
   "lua_ls",
   "sqls",
   "marksman",
