@@ -6,6 +6,7 @@ local options = {
     rust = { "rustfmt" },
     lua = { "stylua" },
     yaml = { "yamlfmt" },
+    sql = { "sqlfmt" },
   },
 
   format_on_save = {
