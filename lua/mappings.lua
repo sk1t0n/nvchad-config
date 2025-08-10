@@ -134,6 +134,16 @@ set("n", "<leader>rb", "<cmd>TSJToggle<CR>", { desc = "splitting/joining blocks 
 -- Refactoring
 set({ "n", "v" }, "<leader>rr", require("refactoring").select_refactor, { desc = "select Refactor" })
 
+-- Replace word under cursor globally
+set("n", "<leader>R", function()
+  local old_word = vim.fn.expand "<cword>"
+  local new_word = vim.fn.input("Replace " .. old_word .. " by? ", old_word)
+  -- Check if the new_word is different from the old_word and is not empty
+  if new_word ~= old_word and new_word ~= "" then
+    vim.cmd(":%s/\\<" .. old_word .. "\\>/" .. new_word .. "/g")
+  end
+end, { desc = "replace word under cursor globally" })
+
 --  Git
 set("n", "<leader>g", "<cmd>LazyGitFilter<CR>", { desc = "LazyGit" })
 
