@@ -1,4 +1,4 @@
-# nvchad_config
+# nvchad-config
 
 This is a user configuration for Neovim based on [NvChad](https://github.com/NvChad/starter). Plugins for PHP (Laravel), Go, Rust, Lua, JavaScript/TypeScript (React), JSON, HTML (Emmet), CSS (Tailwind), Docker, YAML, SQL, Markdown are added and configured.
 
@@ -18,7 +18,7 @@ This is a user configuration for Neovim based on [NvChad](https://github.com/NvC
 
 ## ⚡ Requirements
 
-- [Nerd Fonts](https://www.nerdfonts.com/font-downloads) - for to support icons in fonts (example configuration file for [WezTerm](https://github.com/sk1t0n/ubuntu_configs/blob/master/home/anton/.wezterm.lua))
+- [Nerd Fonts](https://www.nerdfonts.com/font-downloads) - for to support icons in fonts (example configuration file for [WezTerm](https://github.com/sk1t0n/dotfiles/blob/master/home/anton/.wezterm.lua))
 - [WezTerm (alternative Alacritty + Tmux)](https://wezterm.org) - for plugins [image_preview.nvim](https://github.com/adelarsq/image_preview.nvim), [wezterm.nvim](https://github.com/willothy/wezterm.nvim)
 - [Neovim](https://github.com/neovim/neovim/blob/master/INSTALL.md)
 
@@ -80,7 +80,7 @@ nvim
 
 ## Mappings
 
-### WezTerm ([.wezterm.lua](https://github.com/sk1t0n/ubuntu_configs/blob/master/home/anton/.wezterm.lua#L16))
+### WezTerm ([.wezterm.lua](https://github.com/sk1t0n/dotfiles/blob/master/home/anton/.wezterm.lua#L16))
 
 | key                        | description                   |
 | -------------------------- | ----------------------------- |
